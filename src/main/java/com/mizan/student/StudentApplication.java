@@ -1,6 +1,5 @@
 package com.mizan.student;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.boot.SpringApplication;
@@ -13,9 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 
 public class StudentApplication {
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(StudentApplication.class, args);
+		
 	}
 
 
