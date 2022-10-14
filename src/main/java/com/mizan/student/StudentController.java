@@ -28,11 +28,15 @@ public class StudentController {
 		  }
 	
 	
-	@GetMapping(path="/student")
+	@GetMapping(path="/students")
 	  public @ResponseBody Iterable<Student> getAllStudent() {
 	    // This returns a JSON or XML with the users
 	    return studentService.getAll();
 	  
+	}
+	@GetMapping(path="/student")
+	public @ResponseBody Student getStudent(@RequestParam Integer id) {
+		return studentService.getStudent(id);
 	}
 	
 	@PutMapping(path="/student")
